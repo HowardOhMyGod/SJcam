@@ -1,0 +1,308 @@
+$title_font: 'Cabin Condensed', sans-serif
+$sub_title_font: 'Catamaran', sans-serif
+$grey: #333333
+
+*
+  // border: solid 1px
+  position: relative
+  list-style: none
+  vertical-align: top
+  text-decoration: none
+html,body
+  width: 100%
+  margin: 0px
+  padding: 0px
+.page
+  width: 100%
+.menu
+  background-color: black
+  width: 80%
+  height: 60px
+  left: 50%
+  margin-left: -40%
+  padding: 10px
+  & li, ul
+    color: white
+  
+  & ul
+    position: absolute
+    width: 500px
+    bottom: 0px
+    left: 120%
+    height: 30px
+  & li
+    font-size: 24px
+    letter-spacing: 2px
+    font-family: $title_font
+    font-weight: 600
+    padding: 10px
+    a
+      color: #eee
+  & img
+    width: 200px
+    height: 50px
+  & li:hover
+    border-bottom: solid 3px #CD443B
+.sub_menu
+  border-top: solid 4px #CD443B
+  position: absolute
+  height: 40px
+  width: 100%
+  top: 80px
+  left: -0.1%
+  overflow: hidden
+  transition-duration: 0.5s
+  background: #eee
+  z-index: 1
+  box-sizing: border-box
+  cursor: pointer
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19)
+
+
+  & .prod
+    display: inline-block
+    margin-left: 30px
+    background: transparent
+
+    & p
+      text-align: center
+      font-family: $title_font
+      font-weight: 700
+      letter-spacing: 1px
+      top: -135px
+      color: $grey
+      padding-bottom: 5px
+
+    & img
+      height: 120px
+      width: 200px
+      opacity:0
+.sub_menu_img, .name
+  transition: 0.5s
+.sub_menu_img
+  top: -100px
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover
+  p
+    padding-bottom: 5px
+    transition: 0s
+    border-bottom: solid 3px $grey
+
+.sub_menu_open
+  height: 200px
+  padding: 10px
+  padding-top: 20px
+  transition-duration: 0.5s
+  opacity: 1
+
+
+.menu_img, li, ul
+  display: inline-block
+  margin-right: 50px
+.intro
+  height: 600px
+  width: 100%
+  background: #333
+  & h3, h5
+    position: absolute
+    text-align: center
+    left: 50%
+    top: 35%
+    transform: translateX(-50%) translateY(-50%)
+  & h5
+    transform: translateX(-50%) translateY(80%)
+    margin-top: 40px
+    font-size: 24px
+    font-family: $sub_title_font
+    font-weight: 200
+    color: #eee
+  & h3
+    font-size: 36px
+    font-family: $title_font
+    letter-spacing: 2px
+    color: #eee
+  & a
+    display: inline-block
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translateX(-50%)
+    padding: 6px 20px
+    background: #eee
+    border-radius: 3px
+    font-family: $sub_title_font
+    color: #333
+    font-weight: 600
+    z-index: 2
+
+  & a:hover
+    background: rgba(#eee, 0.4)
+    color: #eee
+    font-weight: 400
+    cursor: pointer
+.product
+  height: 600px
+  width: 100%
+  background: #eee
+  & img
+    display: block
+    top: -180px
+    width: 70%
+    margin-right: auto
+    margin-left: auto
+  & h3
+    width: 40%
+    position: absolute
+    text-align: center
+    font-size: 36px
+    top: 70%
+    left: 50%
+    margin-left: -20%
+    font-family: $title_font
+    letter-spacing: 2px
+    color: $grey
+  & h5, a
+    width: 30%
+    position: absolute
+    text-align: center
+    top: 85%
+    font-size: 24px
+    left: 50%
+    margin-left: -15%
+    font-family: $sub_title_font
+    font-weight: 300
+  & a
+    display: block
+    width: 10%
+    left: 50%
+    top: 110%
+    padding: 10px
+    margin-left: -6%
+    border: solid 2px
+    border-radius: 5px
+    font-size: 18px
+    background: #333
+    color: white
+    text-align: center
+    font-family: $sub_title_font
+
+  & a:hover
+    background: rgba(#333, 0.6)
+    cursor: pointer
+    
+.footer
+  background: #333
+  width: 100%
+  height: 200px
+
+  & li
+    display: block
+    margin-top: 5px
+
+  & .product_foot, .support
+    display: inline-block
+    position: absolute
+    font-size: 16px
+    color: #868785
+    font-family: $sub_title_font
+    letter-spacing: 1px
+  & .product_foot
+    left: 10%
+  & .support
+    left: 30%
+  & .copyright
+    position: absolute
+    display: inline-block
+    color: #868785
+    font-family: $sub_title_font
+    font-size: 16px
+    bottom: 40%
+    right: 20%
+.title
+  font-size: 20px
+  color: #c6c6c6
+.block
+  width: 100%
+  height: 600px
+  background: #eee
+  & .product_pic, .prod_info
+    display: inline-block
+    position: absolute
+  & .buttons
+    position: absolute
+    bottom: 0px
+  & .prod_info
+    width: 30%
+    top: 50%
+    right: 20%
+    transform: translateY(-50%)
+    height: 300px
+
+    & h3
+      font-size: 40px
+      margin-bottom: 0px
+      margin-top: 0px
+      font-family: $title_font
+      letter-spacing: 3px
+      color: #333
+      font-weight: 800
+      border-left: solid 6px #333
+      padding-left: 20px
+    & table
+      position: absolute
+      width: 100%
+      bottom: 0px
+      font-family: $sub_title_font
+      border: none
+      border-collapse: collapse
+      font-weight: 600
+      color: #333
+      background: rgba(#333, 0.3)
+    & tr
+      border-bottom: solid 2px #333
+      border-top: solid 2px #333
+
+    & td
+      padding: 6px
+    & .table_title
+      text-align: left
+      padding-left: 20px
+      width: 40%
+  
+  & .product_pic
+    top: 50%
+    left: 20%
+    transform: translateY(-50%)
+    // background: #333
+    position: absolute
+    height: 300px
+    transition: 0.5s
+    // white-space: nowrap
+    overflow: hidden
+  & img
+    display: block
+    width: 400px
+    height: 300px
+    transition: 0.5s
+    top: 0px
+  & .buttons
+    left: 55%
+    transform: translateX(-50%)
+    bottom: 5%
+    width: 52%
+       
+
+    & button
+      width: 150px
+      padding: 5px 10px
+      border-radius: 8px
+      font-family: $sub_title_font
+      font-size: 20px
+      background: #333
+      color: #eee
+      cursor: pointer
+      border: none
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
+.video
+  opacity: 0.8
+  

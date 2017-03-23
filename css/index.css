@@ -1,0 +1,383 @@
+* {
+  position: relative;
+  list-style: none;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page {
+  width: 100%;
+}
+
+.menu {
+  background-color: black;
+  width: 80%;
+  height: 60px;
+  left: 50%;
+  margin-left: -40%;
+  padding: 10px;
+}
+
+.menu li, .menu ul {
+  color: white;
+}
+
+.menu ul {
+  position: absolute;
+  width: 500px;
+  bottom: 0px;
+  left: 120%;
+  height: 30px;
+}
+
+.menu li {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.menu li a {
+  color: #eee;
+}
+
+.menu img {
+  width: 200px;
+  height: 50px;
+}
+
+.menu li:hover {
+  border-bottom: solid 3px #CD443B;
+}
+
+.sub_menu {
+  border-top: solid 4px #CD443B;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  top: 80px;
+  left: -0.1%;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  background: #eee;
+  z-index: 1;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub_menu .prod {
+  display: inline-block;
+  margin-left: 30px;
+  background: transparent;
+}
+
+.sub_menu .prod p {
+  text-align: center;
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  top: -135px;
+  color: #333333;
+  padding-bottom: 5px;
+}
+
+.sub_menu .prod img {
+  height: 120px;
+  width: 200px;
+  opacity: 0;
+}
+
+.sub_menu_img, .name {
+  transition: 0.5s;
+}
+
+.sub_menu_img {
+  top: -100px;
+}
+
+.one:hover p, .two:hover p, .three:hover p, .four:hover p, .five:hover p {
+  padding-bottom: 5px;
+  transition: 0s;
+  border-bottom: solid 3px #333333;
+}
+
+.sub_menu_open {
+  height: 200px;
+  padding: 10px;
+  padding-top: 20px;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.menu_img, li, ul {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.intro {
+  height: 600px;
+  width: 100%;
+  background: #333;
+}
+
+.intro h3, .intro h5 {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.intro h5 {
+  transform: translateX(-50%) translateY(80%);
+  margin-top: 40px;
+  font-size: 24px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 200;
+  color: #eee;
+}
+
+.intro h3 {
+  font-size: 36px;
+  font-family: "Cabin Condensed", sans-serif;
+  letter-spacing: 2px;
+  color: #eee;
+}
+
+.intro a {
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 20px;
+  background: #eee;
+  border-radius: 3px;
+  font-family: "Catamaran", sans-serif;
+  color: #333;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.intro a:hover {
+  background: rgba(238, 238, 238, 0.4);
+  color: #eee;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.product {
+  height: 600px;
+  width: 100%;
+  background: #eee;
+}
+
+.product img {
+  display: block;
+  top: -180px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product h3 {
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  font-size: 36px;
+  top: 70%;
+  left: 50%;
+  margin-left: -20%;
+  font-family: "Cabin Condensed", sans-serif;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+.product h5, .product a {
+  width: 30%;
+  position: absolute;
+  text-align: center;
+  top: 85%;
+  font-size: 24px;
+  left: 50%;
+  margin-left: -15%;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 300;
+}
+
+.product a {
+  display: block;
+  width: 10%;
+  left: 50%;
+  top: 110%;
+  padding: 10px;
+  margin-left: -6%;
+  border: solid 2px;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #333;
+  color: white;
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+}
+
+.product a:hover {
+  background: rgba(51, 51, 51, 0.6);
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+  width: 100%;
+  height: 200px;
+}
+
+.footer li {
+  display: block;
+  margin-top: 5px;
+}
+
+.footer .product_foot, .footer .support {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  color: #868785;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer .product_foot {
+  left: 10%;
+}
+
+.footer .support {
+  left: 30%;
+}
+
+.footer .copyright {
+  position: absolute;
+  display: inline-block;
+  color: #868785;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  bottom: 40%;
+  right: 20%;
+}
+
+.title {
+  font-size: 20px;
+  color: #c6c6c6;
+}
+
+.block {
+  width: 100%;
+  height: 600px;
+  background: #eee;
+}
+
+.block .product_pic, .block .prod_info {
+  display: inline-block;
+  position: absolute;
+}
+
+.block .buttons {
+  position: absolute;
+  bottom: 0px;
+}
+
+.block .prod_info {
+  width: 30%;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  height: 300px;
+}
+
+.block .prod_info h3 {
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: "Cabin Condensed", sans-serif;
+  letter-spacing: 3px;
+  color: #333;
+  font-weight: 800;
+  border-left: solid 6px #333;
+  padding-left: 20px;
+}
+
+.block .prod_info table {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  font-family: "Catamaran", sans-serif;
+  border: none;
+  border-collapse: collapse;
+  font-weight: 600;
+  color: #333;
+  background: rgba(51, 51, 51, 0.3);
+}
+
+.block .prod_info tr {
+  border-bottom: solid 2px #333;
+  border-top: solid 2px #333;
+}
+
+.block .prod_info td {
+  padding: 6px;
+}
+
+.block .prod_info .table_title {
+  text-align: left;
+  padding-left: 20px;
+  width: 40%;
+}
+
+.block .product_pic {
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  position: absolute;
+  height: 300px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.block img {
+  display: block;
+  width: 400px;
+  height: 300px;
+  transition: 0.5s;
+  top: 0px;
+}
+
+.block .buttons {
+  left: 55%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  width: 52%;
+}
+
+.block .buttons button {
+  width: 150px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 20px;
+  background: #333;
+  color: #eee;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video {
+  opacity: 0.8;
+}
